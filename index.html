@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trójkolumnowy Układ Strony i Francja czasów Wojen napoleońskich</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            background-color: aqua;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+        .column img {
+            max-width: 100%;
+			height:100%;
+            height: auto;
+        }
+        .column:nth-child(1) {
+            background-color: blue;
+            color: white;
+        }
+        .column:nth-child(2) {
+            background-color: white;
+            color: black;
+        }
+        .column:nth-child(3) {
+            background-color: red;
+            color: white;
+        }
+        .footer {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Trzech wielkich Matematyków</h1>
+    </div>
+    <div class="container">
+        <div class="column">
+            <h2>Leonhard Euler</h2>
+            <img src="Leonhard_Euler.jpg" alt="Napoleon">
+        </div>
+        <div class="column">
+            <h2>Richard Rieman</h2>
+            <img src="Georg_Friedrich_Bernhard_Riemann.jpg" alt="Flaga Francji">
+        </div>
+        <div class="column">
+            <h2>Tomasz Miller</h2>
+            <img src="images.jpg" alt="StaraGwardia">
+        </div>
+    </div>
+    <div class="footer">
+        <p>Autor: Mariusz Salomon</p>
+    </div>
+</body>
+</html>
